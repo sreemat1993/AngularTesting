@@ -3,20 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from 'projects/shared/src/app/app.module';
-import { MaincompComponent } from './maincomp/maincomp.component';
-
+import { SharedModule } from '../../../shared/src/app/app.module';
+import { Subcomp1Component } from './subcomp1/subcomp1.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MaincompComponent
+    Subcomp1Component
   ],
   imports: [
-    BrowserModule,
-    SharedModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class Project1Module { }

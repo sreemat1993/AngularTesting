@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ServiceOneService } from './service-one.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,5 @@ import { ServiceOneService } from './service-one.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-testing';
-  constructor(private serviceOne: ServiceOneService) {
-
-  }
+  title = 'shared';
 }
