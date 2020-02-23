@@ -1,12 +1,15 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 
 import { ServiceSharedTwoService } from './service-shared-two.service';
 
 describe('ServiceSharedTwoService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
-
-  it('should be created', () => {
-    const service: ServiceSharedTwoService = TestBed.get(ServiceSharedTwoService);
-    expect(service).toBeTruthy();
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [ServiceSharedTwoService]
+    });
   });
+
+  it('should be created', inject([ServiceSharedTwoService], (service: ServiceSharedTwoService) => {
+    expect(service).toBeTruthy();
+  }));
 });

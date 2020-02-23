@@ -12,9 +12,9 @@ import { MaincompComponent } from './maincomp/maincomp.component';
     MaincompComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     SharedModule.forRoot(),
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

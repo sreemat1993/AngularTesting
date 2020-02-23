@@ -9,9 +9,13 @@
   },
   "files": [
     "test.ts",
-    "polyfills.ts"
+    "polyfills.ts",
+    
   ],
   "include": [
+    "../projects/project1/src/app/**/*.ts",
+    "../projects/project2/src/app/**/*.ts",
+    "../projects/shared/src/app/**/*.ts",
     "**/*.spec.ts",
     "**/*.d.ts"
   ]
